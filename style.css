@@ -1,7 +1,7 @@
 :root {
     --primary-color: #6191b5;
     --highlight-color: #c4d8e7;
-    --text-color: #06283d;
+    --text-color: #0c5380;
 }
 
 * {
@@ -13,16 +13,18 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
     background: var(--primary-color);
 }
 
 .container {
     position: relative;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 105px;
     background: #fff;
     padding: 28px 32px;
@@ -66,7 +68,7 @@ body {
 }
 
 .search-box button:hover {
-    background: var(--primary-color);
+    background: var(--text-color);
     color: #fff;
 }
 
